@@ -1,7 +1,6 @@
 ⏱️ WAVE - YOUR PRODUCTIVITY POWERHOUSE
 
 
-
 FEATURES:
   - 🎯 Focus and Break Cycles (25-5 default)
   - 🔁 Auto-cycle between Pomodoro sessions
@@ -11,7 +10,6 @@ FEATURES:
   - 🔔 Optional local notifications
   - 📊 Productivity stats (coming soon!)
   - 💡 Beautiful, smooth UI with animations
-
 
 
 GETTING_STARTED:
@@ -27,14 +25,12 @@ GETTING_STARTED:
     - flutter run
 
 
-
 TECH_STACK:
   - Flutter – Fast cross-platform UI toolkit
   - Provider / Riverpod – State management (based on your implementation)
   - SharedPreferences – Store user preferences
   - Flutter Local Notifications – For alerting sessions
   - Custom Animations – To create a flow-like feel
-
 
 
 CONTRIBUTING:
@@ -46,13 +42,11 @@ CONTRIBUTING:
     - Open a Pull Request
 
 
-
 COMING_SOON:
   - 🔒 Lock screen session control
   - 📈 Weekly focus reports
   - ☁️ Cloud sync
   - ⏳ Custom long break intervals
-
 
 
 ACKNOWLEDGEMENTS:
