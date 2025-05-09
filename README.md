@@ -11,7 +11,6 @@ FEATURES:
   - 📊 Productivity stats (coming soon!)
   - 💡 Beautiful, smooth UI with animations
 
-
 GETTING_STARTED:
   PREREQUISITES:
     - Flutter SDK: https://flutter.dev/docs/get-started/install
