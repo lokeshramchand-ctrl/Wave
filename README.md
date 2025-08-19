@@ -1,6 +1,5 @@
 ⏱️ WAVE - YOUR PRODUCTIVITY POWERHOUSE
 
-
 FEATURES:
   - 🎯 Focus and Break Cycles (25-5 default)
   - 🔁 Auto-cycle between Pomodoro sessions
