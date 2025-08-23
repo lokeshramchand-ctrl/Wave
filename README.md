@@ -1,5 +1,7 @@
+<p align="center">
+  <img src="images/Wave-Readme.png" alt="Wave Pomodoro Banner" width="100%">
+</p>
 
----
 
 # Wave Pomodoro Timer
 
