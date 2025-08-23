@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:isar/isar.dart';
 import 'package:wave/database/daily_focus.dart';
 import 'package:wave/main.dart';
-import 'package:wave/screens/home_screen.dart'; // Adjust the import if necessary
+import 'package:wave/screens/home_screen.dart'; 
 
 class FocusDataScreen extends StatefulWidget {
   const FocusDataScreen({super.key});

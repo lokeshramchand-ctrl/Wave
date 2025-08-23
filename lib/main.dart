@@ -13,11 +13,11 @@ late final Isar isar;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  //Isar Database - related
+  //Isar Database 
   final dir = await getApplicationDocumentsDirectory();
   isar = await Isar.open([DailyFocusSchema], directory: dir.path);
 
-  //Window Manager - Related
+  //Window Manager 
   await windowManager.ensureInitialized();
   WindowOptions windowOptions = const WindowOptions(
     size: Size(400, 400),
@@ -32,7 +32,6 @@ void main() async {
     await windowManager.show();
     await windowManager.focus();
   });
-  //WM - End
 
   runApp(
     ChangeNotifierProvider(
@@ -51,8 +50,8 @@ class MyApp extends StatelessWidget {
       builder: (context, themeNotifier, child) {
         return MaterialApp(
           themeMode: themeNotifier.themeMode,
-          theme: AppTheme.lightTheme, // Use your custom light theme
-          darkTheme: AppTheme.darkTheme, // Use your custom dark theme
+          theme: AppTheme.lightTheme, 
+          darkTheme: AppTheme.darkTheme,
           debugShowCheckedModeBanner: false,
           home: const HomeScreen(),
         );
