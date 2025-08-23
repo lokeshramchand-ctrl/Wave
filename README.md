@@ -1,13 +1,12 @@
 
----
+
 
 # Wave Pomodoro Timer
 
 *A minimalist, Flutter-based Pomodoro timer for Windows, designed with clean aesthetics and inspired by the Flow Pomodoro philosophy. Wave helps you maintain focus, track productivity, and stay consistent — all with a simple, distraction-free interface.*
 
----
 
-## 📌 Features
+##  Features
 
 ### Current
 
@@ -39,7 +38,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 Here’s how the repository is organized for clarity and scalability:
 
@@ -70,7 +69,7 @@ wave-pomodoro/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### For Users
 
@@ -97,7 +96,7 @@ flutter run -d windows
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions of all sizes. Here’s how you can help:
 
@@ -134,7 +133,7 @@ Priority areas:
 
 ---
 
-## 🧪 Development Setup
+##  Development Setup
 
 ```bash
 # Enable Windows desktop support
@@ -150,7 +149,7 @@ dart run build_runner build --delete-conflicting-outputs
 
 ---
 
-## 📊 Roadmap
+##  Roadmap
 
 **v2.0**
 
@@ -172,20 +171,20 @@ Future ideas:
 
 ---
 
-## 🐛 Issues & Support
+##  Issues & Support
 
 * Use [GitHub Issues](../../issues) for bug reports and feature requests
 * For private inquiries: **[lokeshramchand@gmail.com](mailto:lokeshramchand@gmail.com)**
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 * Inspired by **Flow Pomodoro** app
 * Built with **Flutter** and the amazing developer community
