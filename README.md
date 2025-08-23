@@ -77,14 +77,14 @@ wave-pomodoro/
 
 1. Download the latest release from [Releases](../../releases)
 2. Extract the ZIP file
-3. Run `wave_pomodoro.exe`
+3. Run `wave_v1.0.0.exe`
 
 ### For Developers
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/wave-pomodoro.git
-cd wave-pomodoro
+git clone https://github.com/lokeshramchand-ctrl/wave.git
+cd wave
 
 # Install dependencies
 flutter pub get
@@ -104,16 +104,16 @@ We welcome contributions of all sizes. Here’s how you can help:
 
 ```bash
 # Fork the repository
-git fork https://github.com/your-username/wave-pomodoro.git
+git fork https://github.com/lokeshramchand/wave.git
 
 # Create a new feature branch
-git checkout -b feature/amazing-feature
+git checkout -b feature/another
 
 # Commit your changes
-git commit -m "Add amazing feature"
+git commit -m "Add another feature"
 
 # Push to your fork
-git push origin feature/amazing-feature
+git push origin feature/another-feature
 
 # Open a Pull Request
 ```
