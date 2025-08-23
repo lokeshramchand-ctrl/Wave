@@ -55,7 +55,7 @@ wave-pomodoro/
 │
 ├── assets/
 │   ├── images/          # App images/icons
-│   └── sounds/          # Notification sounds
+│   
 │
 ├── test/                # Unit and widget tests
 ├── windows/             # Windows-specific build files
