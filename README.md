@@ -1,373 +1,423 @@
+Perfect — thanks for sharing both the folder structure screenshot and your current README draft. Right now your README is already solid, but I can help you refine it to look professional, structured, and attractive for open-source contributors. I'll also suggest improvements (like adding a banner, badges, and better project structure visualization).
+
+
+Here’s a refined README template (super neat, no emojis, feels like an OSS-level project):
+
+
+
 Wave Pomodoro Timer
 
 
-A minimalist Flutter-based Pomodoro timer application for Windows, designed with clean aesthetics and inspired by the Flow Pomodoro app. Wave combines simplicity with powerful features to help you maintain focus and track productivity.
+A minimalist, Flutter-based Pomodoro timer for Windows, designed with clean aesthetics and inspired by the Flow Pomodoro philosophy. Wave helps you maintain focus, track productivity, and stay consistent — all with a simple, distraction-free interface.
 
 
-Features
+
+📌 Features
 
 
-Current Features
+Current
 
 
-25-minute Pomodoro timer - Standard productivity timer intervals
-Picture-in-Picture (PIP) mode - Continue timing while working in other applications
-Clean Wave aesthetics - Minimalist design inspired by Flow Pomodoro
-Dual theme support - Light and dark mode options
-Daily focus tracking - View your current day's total focus time
-Isar database integration - Efficient local data storage
 
 
-Planned Features
+25-minute Pomodoro timer — Standard productivity timer intervals
 
 
-Enhanced database management - Expanded data storage capabilities
-Focus time analytics - Detailed graphs and statistics
-Historical data - Track and analyze focus patterns over time
-Advanced reporting - Weekly, monthly, and yearly focus insights
-Session management - Break timers and customizable intervals
-Productivity streaks - Motivation through achievement tracking
-Export functionality - Export your focus data
-Sound customization - Custom notification sounds and alerts
 
 
-Tech Stack
+Picture-in-Picture (PIP) mode — Continue timing while working in other applications
+
+
+
+
+Clean wave-inspired design — Minimalist and modern
+
+
+
+
+Dual theme support — Light and dark mode options
+
+
+
+
+Daily focus tracking — Total focus time for the day
+
+
+
+
+Isar database integration — Fast and local data storage
+
+
+
+
+Planned
+
+
+
+
+Enhanced database management
+
+
+
+
+Focus time analytics (graphs and statistics)
+
+
+
+
+Historical data (weekly, monthly, yearly trends)
+
+
+
+
+Productivity streaks & motivational tracking
+
+
+
+
+Export functionality (CSV, JSON)
+
+
+
+
+Sound customization for alerts
+
+
+
+
+Cross-platform expansion (macOS, Linux, Mobile)
+
+
+
+
+
+🛠 Tech Stack
+
+
 
 
 Frontend: Flutter (Windows desktop application)
-Database: Isar (Fast, local NoSQL database)
-Platform: Windows (with potential for cross-platform expansion)
 
 
-Prerequisites
 
 
-Before contributing to Wave, ensure you have:
+Database: Isar (local NoSQL database)
 
 
-Flutter SDK (3.0 or higher)
-Dart SDK (3.0 or higher)
-Windows development environment
-Visual Studio Community (with C++ desktop development tools)
-Git for version control
 
 
-Installation
+State Management: Provider / Riverpod
+
+
+
+
+Platform: Windows (cross-platform support in roadmap)
+
+
+
+
+
+📂 Project Structure
+
+
+Here’s how the repository is organized for clarity and scalability:
+
+
+wave-pomodoro/
+├── lib/
+│   ├── database/        # Isar models and persistence logic
+│   ├── logic/           # Business logic and state management
+│   ├── screens/         # UI screens/pages
+│   ├── theme/           # App theming (light/dark, colors, styles)
+│   └── main.dart        # Entry point
+│
+├── assets/
+│   ├── images/          # App images/icons
+│   └── sounds/          # Notification sounds
+│
+├── test/                # Unit and widget tests
+├── windows/             # Windows-specific build files
+│
+├── .gitignore
+├── pubspec.yaml
+├── pubspec.lock
+├── analysis_options.yaml
+├── devtools_options.yaml
+├── README.md
+
+
+
+
+
+✅ Suggestion: Consider adding a banner image (assets/images/banner.png) for your README (a wide 1200x400 graphic with app name + tagline). This gives a professional OSS look when someone lands on your repo.
+
+
+
+
+
+🚀 Installation
 
 
 For Users
 
 
-Download the latest release from the Releases page
+
+
+Download the latest release from Releases
+
+
+
+
 Extract the ZIP file
+
+
+
+
 Run wave_pomodoro.exe
+
+
 
 
 For Developers
 
 
-
-
-Clone the repository
-
-
+# Clone the repository
 git clone https://github.com/your-username/wave-pomodoro.git
 cd wave-pomodoro
 
-
-
-
-
-Install dependencies
-
-
+# Install dependencies
 flutter pub get
 
-
-
-
-
-Generate Isar database files
-
-
+# Generate Isar database files
 dart run build_runner build
 
-
-
-
-
-Run the application
-
-
+# Run the application
 flutter run -d windows
 
 
 
 
-
-Project Structure
-
-
-wave-pomodoro/
-├── lib/
-│   ├── core/
-│   │   ├── constants/
-│   │   ├── themes/
-│   │   └── utils/
-│   ├── data/
-│   │   ├── models/
-│   │   ├── repositories/
-│   │   └── services/
-│   ├── presentation/
-│   │   ├── pages/
-│   │   ├── widgets/
-│   │   └── providers/
-│   └── main.dart
-├── assets/
-│   ├── images/
-│   └── sounds/
-├── test/
-├── windows/
-└── README.md
+🤝 Contributing
 
 
-
-Contributing
-
-
-We welcome contributions from developers of all skill levels. Here's how you can help make Wave better:
+We welcome contributions of all sizes. Here’s how you can help:
 
 
-Getting Started
+# Fork the repository
+git fork https://github.com/your-username/wave-pomodoro.git
 
-
-Fork the repository on GitHub
-Create a feature branch from main
-
+# Create a new feature branch
 git checkout -b feature/amazing-feature
 
-Make your changes following our coding standards
-Test thoroughly on Windows
-Commit your changes with clear, descriptive messages
-Push to your fork and submit a pull request
+# Commit your changes
+git commit -m "Add amazing feature"
+
+# Push to your fork
+git push origin feature/amazing-feature
+
+# Open a Pull Request
+
 
 
 Contribution Guidelines
 
 
-Code Style
 
 
 Follow Dart/Flutter style guidelines
-Use meaningful variable and function names
+
+
+
+
+Use meaningful commit messages
+
+
+
+
 Add comments for complex logic
-Maintain consistent indentation (2 spaces)
-
-
-Database Changes
-
-
-When modifying Isar models, run code generation:
-
-dart run build_runner build --delete-conflicting-outputs
-
-Test database migrations thoroughly
-Document schema changes in pull requests
-
-
-Testing
-
-
-Write unit tests for new features
-Test on multiple Windows versions if possible
-Ensure PIP mode works correctly
-Verify theme switching functionality
-
-
-Priority Contribution Areas
-
-
-We especially need help with:
-
-
-Analytics Dashboard - Creating comprehensive focus time graphs and statistics
-Data Visualization - Charts showing daily, weekly, and monthly trends
-Historical Data Management - Efficient storage and retrieval of past sessions
-UI/UX Improvements - Enhancing the Wave aesthetic design
-Performance Optimization - Improving app responsiveness and memory usage
-Testing - Expanding test coverage and automated testing
-Documentation - API documentation and user guides
-
-
-Feature Requests
-
-
-Before implementing major features:
-
-
-Check existing issues to avoid duplication
-Create an issue describing the feature
-Discuss implementation with maintainers
-Wait for approval before starting work
-
-
-Development Setup
-
-
-Environment Configuration
 
 
 
 
-Enable Windows desktop support
+Write unit tests where possible
 
 
+
+
+Priority areas:
+
+
+
+
+Analytics dashboard
+
+
+
+
+Data visualization
+
+
+
+
+Historical data management
+
+
+
+
+UI/UX improvements
+
+
+
+
+Performance optimization
+
+
+
+
+
+🧪 Development Setup
+
+
+# Enable Windows desktop support
 flutter config --enable-windows-desktop
 
-
-
-
-
-Verify your setup
-
-
+# Verify environment
 flutter doctor
 
-
-
-
-
-Install development dependencies
-
-
-flutter pub deps
-
-
-
-
-
-Database Development
-
-
-Wave uses Isar for local data storage. Key commands:
-
-
-# Generate database classes
-dart run build_runner build
-
-# Watch for changes and rebuild
-dart run build_runner watch
-
-# Clean build artifacts
+# Clean & rebuild database models
 dart run build_runner clean
+dart run build_runner build --delete-conflicting-outputs
 
 
 
-Building for Release
+
+📊 Roadmap
 
 
-flutter build windows --release
+v2.0
 
 
 
-Architecture
+
+Analytics dashboard
 
 
-Wave follows a clean architecture pattern:
 
 
-Presentation Layer: UI components and state management
-Data Layer: Database operations and data models
-Core Layer: Shared utilities, constants, and themes
-
-
-State Management
-
-
-Uses Provider/Riverpod for state management
-Separates business logic from UI components
-Maintains reactive data flow
-
-
-Database Schema
-
-
-Session: Individual pomodoro sessions
-DailyStats: Aggregated daily focus metrics
-Settings: User preferences and configuration
-
-
-Issues and Bug Reports
-
-
-When reporting bugs, please include:
-
-
-Operating system version
-Flutter version (flutter --version)
-Steps to reproduce the issue
-Expected vs actual behavior
-Screenshots if applicable
-
-
-Roadmap
-
-
-Version 2.0
-
-
-Advanced analytics dashboard
 Historical data visualization
-Session management improvements
 
 
-Version 3.0
 
 
-Cross-platform support (macOS, Linux)
+Advanced session management
+
+
+
+
+v3.0
+
+
+
+
+Cross-platform support (macOS/Linux)
+
+
+
+
 Cloud synchronization
+
+
+
+
 Team productivity features
 
 
-Future Considerations
+
+
+Future ideas:
+
+
 
 
 Mobile companion app
+
+
+
+
 Browser extension
-API for third-party integrations
-
-
-License
-
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-Acknowledgments
-
-
-Inspired by the Flow Pomodoro app design philosophy
-Built with Flutter and the amazing Flutter community
-Thanks to all contributors who help improve Wave
-
-
-Support
-
-
-Issues: Use GitHub Issues for bug reports and feature requests
-Discussions: Join GitHub Discussions for questions and ideas
-Email: [your-email@example.com] for private inquiries
-
-
-Maintainers
-
-
-[Your Name] - Project Creator and Lead Maintainer
-Looking for additional maintainers - contact us if interested
 
 
 
-Made with Flutter and dedication to productivity
+
+API for integrations
 
 
-Wave Pomodoro Timer - Focus flows like waves
+
+
+
+🐛 Issues & Support
+
+
+
+
+Use GitHub Issues for bug reports and feature requests
+
+
+
+
+For private inquiries: lokeshramchand@gmail.com
+
+
+
+
+
+📜 License
+
+
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+
+
+🙏 Acknowledgments
+
+
+
+
+Inspired by Flow Pomodoro app
+
+
+
+
+Built with Flutter and the amazing developer community
+
+
+
+
+
+🔥 Suggestions to improve your repo presentation
+
+
+
+
+Banner Image: A simple minimalist banner (with app name & wave-style graphic).
+
+
+
+
+Badges: Add GitHub badges at the top (build passing, MIT license, contributions welcome).
+
+
+
+
+Screenshots / GIFs: Show the app in action (before/after light & dark mode).
+
+
+
+
+Wiki/Docs folder: If you expand features, link docs for dev setup and database schema.
+
+
+
+
+
+👉 Do you want me to design a clean banner mockup (like a minimal wave graphic with the app name) for your repo so it looks next-level on GitHub?
