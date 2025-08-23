@@ -104,7 +104,7 @@ We welcome contributions of all sizes. Here’s how you can help:
 
 ```bash
 # Fork the repository
-git fork https://github.com/lokeshramchand/wave.git
+git fork https://github.com/lokeshramchand-ctrl/wave.git
 
 # Create a new feature branch
 git checkout -b feature/another
